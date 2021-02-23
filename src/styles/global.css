@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+
+body, input, textarea, button{
+    font: 400 16rem 'Inter', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+:root{
+    --white:#fff;
+    --background:#f2f3f5;
+    --gray-line:#dcdde0;
+    --text: #666666;
+    --text-highlight:#b3b9ff;
+    --title:#2e384d;
+    --red: #e83f5b;
+    --green: #4cd62b;
+    --blue: #5965e0 ;
+    --blue-dark: #4953b8;
+    --blue-twitter: #2aa9e0;
+}
+
+@media(max-width: 1080px){
+    html{
+        font-size: 93.75%; /*Equivalendo a 15px*/ 
+    }
+}
+
+@media(max-width: 720px){
+    html{
+        font-size: 87.5%; /*Equivalendo a 15px*/ 
+    }
+}
+
+
+.experience-Bar{
+    display: flex;
+    align-items: center;
+}
+
+.experience-Bar span{
+    font-size: 1rem;
+}
+
+.experience-Bar > div{
+    flex: 1; /*Ocupar a largura máxima possível do container*/
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.experience-Bar > div > div{
+    height: 4px;
+    border-radius: 4px;
+    background: var(--green);
+}
+
+.container{
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+span.current-experience{
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%); /*Para deixar um elemento position absolute no meio*/
+}

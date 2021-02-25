@@ -10,7 +10,7 @@ body{
 }
 
 body, input, textarea, button{
-    font: 400 16rem 'Inter', sans-serif;
+    font: 400 16px 'Inter', sans-serif;
 }
 
 button{
@@ -44,6 +44,6 @@ a{
 
 @media(max-width: 720px){
     html{
-        font-size: 87.5%; /*Equivalendo a 15px*/ 
+        font-size: 87.5%; /*Equivalendo a 14px*/ 
     }
 }

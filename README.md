@@ -26,6 +26,9 @@ O next.JS substitui o create-react-app, é considerado um framework em cima do R
 Usado para que o CSS não afete outras páginas, restringe o CSS apenas ao componente no caso dessa aplicação.
 Ex.: na pasta src/components/ExperienceBar.tsx foi importado o css com o nome 'styles' e nas classes são usados styles.[nome da classe definida no css importado].
 
+##### Context API
+É a API de contexto do React, com ele é possível fazer comunicação entre componentes. Dentro de um contexto é possível mandar objetos, funções...
+
 ### Comandos de criação do app
 
 - npx create-next-app moveit-next - cria o projeto em next

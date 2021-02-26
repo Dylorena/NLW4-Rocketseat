@@ -48,7 +48,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
     // É usado o clear para que o delay de 1 segundo não seja executado e de fato com o click do botão o time parar
     clearTimeout(CountdownTimeOut);
     setIsActive(false);
-    setTime(25 * 60);
+    setTime(0.1 * 60);
     setHasFinished(false);
   }
 

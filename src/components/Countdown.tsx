@@ -28,8 +28,9 @@ export function Countdown() {
       {hasFinished ? (
         <button
           disabled
-          className={styles.CountdownButton}>
+          className={`${styles.CountdownButton} ${styles.CountdownButtonCicleFinished}`}>
           Ciclo encerrado
+          <img src="/icons/check.png" alt="Ciclo encerrado"/>
         </button>
       ) : (
           isActive ? (

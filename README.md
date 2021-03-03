@@ -34,3 +34,11 @@ Ex.: na pasta src/components/ExperienceBar.tsx foi importado o css com o nome 's
 - npx create-next-app moveit-next - cria o projeto em next
 - npm install typescript @types/react @types/react-dom @types/node -D - instalando typescript na aplicação
 - npm run dev - Roda o projeto
+
+### Comandos para rodar o app
+```js
+$ git clone https://github.com/Dylorena/NLW4-Rocketseat.git
+$ cd NLW4-Rocketseat
+$ npm install
+$ npm run dev
+```

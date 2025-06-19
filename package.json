@@ -2,7 +2,14 @@
   "name": "moveit-next",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "postcss": "8.2.15"
+  },
+  "overrides": {
+    "postcss": "8.2.15"
+  },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider next dev",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider next build",
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider next start"
@@ -21,10 +28,8 @@
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "cross-env": "^7.0.3",
+    "npm-force-resolutions": "^0.0.10",
     "typescript": "^4.1.5"
-  },
-  "overrides": {
-    "postcss": "8.2.15"
   },
   "engines": {
     "node": "18.x"
